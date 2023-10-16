@@ -15,7 +15,7 @@ namespace UnitTest1
             // Arrange
             double a = 2.0;
             double b = 3.0;
-            double expected = pow(a, 2) - sin(b) * cos(b) + pow(b, 2);
+            double expected = pow(a, 2) * sin(b) + pow(b, 2) * cos(a);
 
             // Act
             double actual = h(a, b);
